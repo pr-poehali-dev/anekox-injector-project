@@ -16,7 +16,7 @@ const Download = () => {
           <ScrollReveal>
             <div className="text-center mb-16">
               <Badge className="px-4 py-2 text-sm bg-primary/10 text-primary border-primary/20 hover:bg-primary/20 mb-4">
-                Последняя версия 2.5.0
+                Последняя версия 3.1.0
               </Badge>
               <h1 className="text-5xl md:text-6xl font-bold mb-4">Скачать ANEKOX</h1>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -28,7 +28,7 @@ const Download = () => {
           <ScrollReveal delay={100}>
             <Card className="border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-transparent mb-12">
               <CardHeader className="text-center pb-4">
-                <CardTitle className="text-3xl mb-2">ANEKOX v2.5.0</CardTitle>
+                <CardTitle className="text-3xl mb-2">ANEKOX v3.1.0</CardTitle>
                 <CardDescription className="text-base">
                   Стабильная версия с последними улучшениями
                 </CardDescription>
@@ -40,7 +40,7 @@ const Download = () => {
                     Скачать для Windows
                   </Button>
                   <p className="text-sm text-muted-foreground">
-                    Размер: 15.3 MB • Дата выхода: 15 января 2025
+                    Размер: 16.8 MB • Дата выхода: 15 октября 2025
                   </p>
                 </div>
 
@@ -162,8 +162,8 @@ const Download = () => {
                     <div className="flex items-center gap-4">
                       <Icon name="Package" size={24} className="text-muted-foreground" />
                       <div>
-                        <p className="font-medium">ANEKOX v2.4.2</p>
-                        <p className="text-sm text-muted-foreground">28 декабря 2024 • 14.8 MB</p>
+                        <p className="font-medium">ANEKOX v3.0.5</p>
+                        <p className="text-sm text-muted-foreground">8 октября 2025 • 16.2 MB</p>
                       </div>
                     </div>
                     <Button variant="outline" size="sm">
@@ -175,8 +175,8 @@ const Download = () => {
                     <div className="flex items-center gap-4">
                       <Icon name="Package" size={24} className="text-muted-foreground" />
                       <div>
-                        <p className="font-medium">ANEKOX v2.4.0</p>
-                        <p className="text-sm text-muted-foreground">10 декабря 2024 • 14.5 MB</p>
+                        <p className="font-medium">ANEKOX v3.0.0</p>
+                        <p className="text-sm text-muted-foreground">28 сентября 2025 • 15.9 MB</p>
                       </div>
                     </div>
                     <Button variant="outline" size="sm">
