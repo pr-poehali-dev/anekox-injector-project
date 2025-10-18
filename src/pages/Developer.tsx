@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
@@ -5,6 +6,14 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 const Developer = () => {
+  const [copied, setCopied] = useState(false);
+
+  const copyDiscordUsername = () => {
+    navigator.clipboard.writeText('lovly_muslb');
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
@@ -30,11 +39,17 @@ const Developer = () => {
                   <CardTitle className="text-3xl mb-2">Acustic</CardTitle>
                   <CardDescription className="text-lg mb-4">Создатель ANEKOX</CardDescription>
                   <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
-                    <Button className="bg-[#5865F2] hover:bg-[#4752C4]">
-                      <Icon name="MessageCircle" className="mr-2" size={20} />
-                      Discord
+                    <Button 
+                      onClick={copyDiscordUsername}
+                      className="bg-[#5865F2] hover:bg-[#4752C4]"
+                    >
+                      <Icon name={copied ? "Check" : "MessageCircle"} className="mr-2" size={20} />
+                      {copied ? 'Скопировано!' : 'Discord'}
                     </Button>
-                    <Button className="bg-[#0088cc] hover:bg-[#006699]">
+                    <Button 
+                      onClick={() => window.open('https://t.me/akenox_news', '_blank')}
+                      className="bg-[#0088cc] hover:bg-[#006699]"
+                    >
                       <Icon name="Send" className="mr-2" size={20} />
                       Telegram
                     </Button>
