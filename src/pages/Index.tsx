@@ -4,6 +4,8 @@ import Icon from '@/components/ui/icon';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { ScrollReveal } from '@/components/ScrollReveal';
+import { ProjectStats } from '@/components/ProjectStats';
+import { UserReviews } from '@/components/UserReviews';
 import { Link } from 'react-router-dom';
 
 const Index = () => {
@@ -108,22 +110,28 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 px-4">
+      <ProjectStats />
+
+      <UserReviews />
+
+      <section className="py-20 px-4 bg-gradient-to-b from-transparent to-primary/5">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Готовы начать?</h2>
-          <p className="text-xl text-muted-foreground mb-8">
-            Присоединяйтесь к нашему сообществу и получайте поддержку
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="text-lg px-8 py-6 bg-[#5865F2] hover:bg-[#4752C4]">
-              <Icon name="MessageCircle" className="mr-2" size={24} />
-              Discord
-            </Button>
-            <Button size="lg" className="text-lg px-8 py-6 bg-[#0088cc] hover:bg-[#006699]">
-              <Icon name="Send" className="mr-2" size={24} />
-              Telegram
-            </Button>
-          </div>
+          <ScrollReveal>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Готовы начать?</h2>
+            <p className="text-xl text-muted-foreground mb-8">
+              Присоединяйтесь к нашему сообществу и получайте поддержку
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" className="text-lg px-8 py-6 bg-[#5865F2] hover:bg-[#4752C4]">
+                <Icon name="MessageCircle" className="mr-2" size={24} />
+                Discord
+              </Button>
+              <Button size="lg" className="text-lg px-8 py-6 bg-[#0088cc] hover:bg-[#006699]">
+                <Icon name="Send" className="mr-2" size={24} />
+                Telegram
+              </Button>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 

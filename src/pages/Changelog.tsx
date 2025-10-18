@@ -8,7 +8,7 @@ const Changelog = () => {
   const releases = [
     {
       version: '2.5.0',
-      date: '15 октября 2024',
+      date: '15 января 2025',
       type: 'major',
       changes: [
         { type: 'new', text: 'Добавлена поддержка новых Lua библиотек' },
@@ -19,7 +19,7 @@ const Changelog = () => {
     },
     {
       version: '2.4.2',
-      date: '1 октября 2024',
+      date: '28 декабря 2024',
       type: 'patch',
       changes: [
         { type: 'fixed', text: 'Исправлены проблемы со стабильностью' },
@@ -29,7 +29,7 @@ const Changelog = () => {
     },
     {
       version: '2.4.0',
-      date: '20 сентября 2024',
+      date: '10 декабря 2024',
       type: 'minor',
       changes: [
         { type: 'new', text: 'Новый темный интерфейс' },
@@ -40,7 +40,7 @@ const Changelog = () => {
     },
     {
       version: '2.3.1',
-      date: '5 сентября 2024',
+      date: '25 ноября 2024',
       type: 'patch',
       changes: [
         { type: 'fixed', text: 'Критическое исправление безопасности' },
@@ -49,7 +49,7 @@ const Changelog = () => {
     },
     {
       version: '2.3.0',
-      date: '25 августа 2024',
+      date: '8 ноября 2024',
       type: 'minor',
       changes: [
         { type: 'new', text: 'Библиотека готовых скриптов' },
@@ -60,7 +60,7 @@ const Changelog = () => {
     },
     {
       version: '2.2.0',
-      date: '10 августа 2024',
+      date: '20 октября 2024',
       type: 'minor',
       changes: [
         { type: 'new', text: 'Автоматическое обновление инжектора' },

@@ -40,7 +40,7 @@ const Download = () => {
                     Скачать для Windows
                   </Button>
                   <p className="text-sm text-muted-foreground">
-                    Размер: 15.3 MB • Дата выхода: 15 октября 2024
+                    Размер: 15.3 MB • Дата выхода: 15 января 2025
                   </p>
                 </div>
 
@@ -163,7 +163,7 @@ const Download = () => {
                       <Icon name="Package" size={24} className="text-muted-foreground" />
                       <div>
                         <p className="font-medium">ANEKOX v2.4.2</p>
-                        <p className="text-sm text-muted-foreground">1 октября 2024 • 14.8 MB</p>
+                        <p className="text-sm text-muted-foreground">28 декабря 2024 • 14.8 MB</p>
                       </div>
                     </div>
                     <Button variant="outline" size="sm">
@@ -176,7 +176,7 @@ const Download = () => {
                       <Icon name="Package" size={24} className="text-muted-foreground" />
                       <div>
                         <p className="font-medium">ANEKOX v2.4.0</p>
-                        <p className="text-sm text-muted-foreground">20 сентября 2024 • 14.5 MB</p>
+                        <p className="text-sm text-muted-foreground">10 декабря 2024 • 14.5 MB</p>
                       </div>
                     </div>
                     <Button variant="outline" size="sm">
