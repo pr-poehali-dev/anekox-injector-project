@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ThemeToggle } from '@/components/theme-toggle';
+import { SearchDialog } from '@/components/SearchDialog';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import Icon from '@/components/ui/icon';
 
@@ -16,7 +17,9 @@ const Navbar = () => {
     { path: '/features', label: 'Возможности' },
     { path: '/instructions', label: 'Инструкция' },
     { path: '/faq', label: 'FAQ' },
-    { path: '/developer', label: 'О проекте' }
+    { path: '/developer', label: 'О проекте' },
+    { path: '/changelog', label: 'Changelog' },
+    { path: '/download', label: 'Скачать' }
   ];
 
   return (
@@ -43,6 +46,7 @@ const Navbar = () => {
           </div>
           
           <div className="flex items-center gap-3">
+            <SearchDialog />
             <Button variant="ghost" size="icon" className="hover:bg-accent hidden sm:flex">
               <Icon name="MessageCircle" size={20} />
             </Button>

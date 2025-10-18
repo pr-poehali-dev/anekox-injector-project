@@ -3,6 +3,7 @@ import { Badge } from '@/components/ui/badge';
 import Icon from '@/components/ui/icon';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import { ScrollReveal } from '@/components/ScrollReveal';
 import { Link } from 'react-router-dom';
 
 const Index = () => {
@@ -24,10 +25,12 @@ const Index = () => {
               Мощный и надежный инжектор для Roblox с безупречной стабильностью работы
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-              <Button size="lg" className="text-lg px-8 py-6 bg-primary hover:bg-primary/90">
-                <Icon name="Download" className="mr-2" size={24} />
-                Скачать ANEKOX
-              </Button>
+              <Link to="/download">
+                <Button size="lg" className="text-lg px-8 py-6 bg-primary hover:bg-primary/90">
+                  <Icon name="Download" className="mr-2" size={24} />
+                  Скачать ANEKOX
+                </Button>
+              </Link>
               <Button size="lg" variant="outline" className="text-lg px-8 py-6">
                 <Icon name="PlayCircle" className="mr-2" size={24} />
                 Смотреть видео
@@ -53,38 +56,46 @@ const Index = () => {
 
       <section className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Почему ANEKOX?</h2>
-            <p className="text-xl text-muted-foreground">Три ключевых преимущества</p>
-          </div>
+          <ScrollReveal>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-4">Почему ANEKOX?</h2>
+              <p className="text-xl text-muted-foreground">Три ключевых преимущества</p>
+            </div>
+          </ScrollReveal>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center space-y-4 p-6 rounded-xl bg-card border border-border hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
-                <Icon name="Activity" size={32} className="text-primary" />
+            <ScrollReveal delay={100}>
+              <div className="text-center space-y-4 p-6 rounded-xl bg-card border border-border hover:shadow-lg transition-shadow">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
+                  <Icon name="Activity" size={32} className="text-primary" />
+                </div>
+                <h3 className="text-2xl font-bold">Надежная работа</h3>
+                <p className="text-muted-foreground">
+                  Стабильность без сбоев и зависаний во время игры
+                </p>
               </div>
-              <h3 className="text-2xl font-bold">Надежная работа</h3>
-              <p className="text-muted-foreground">
-                Стабильность без сбоев и зависаний во время игры
-              </p>
-            </div>
-            <div className="text-center space-y-4 p-6 rounded-xl bg-card border border-border hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
-                <Icon name="Lock" size={32} className="text-primary" />
+            </ScrollReveal>
+            <ScrollReveal delay={200}>
+              <div className="text-center space-y-4 p-6 rounded-xl bg-card border border-border hover:shadow-lg transition-shadow">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
+                  <Icon name="Lock" size={32} className="text-primary" />
+                </div>
+                <h3 className="text-2xl font-bold">Безопасность</h3>
+                <p className="text-muted-foreground">
+                  Защита от обнаружения и блокировок аккаунта
+                </p>
               </div>
-              <h3 className="text-2xl font-bold">Безопасность</h3>
-              <p className="text-muted-foreground">
-                Защита от обнаружения и блокировок аккаунта
-              </p>
-            </div>
-            <div className="text-center space-y-4 p-6 rounded-xl bg-card border border-border hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
-                <Icon name="Rocket" size={32} className="text-primary" />
+            </ScrollReveal>
+            <ScrollReveal delay={300}>
+              <div className="text-center space-y-4 p-6 rounded-xl bg-card border border-border hover:shadow-lg transition-shadow">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
+                  <Icon name="Rocket" size={32} className="text-primary" />
+                </div>
+                <h3 className="text-2xl font-bold">Скорость</h3>
+                <p className="text-muted-foreground">
+                  Мгновенная инъекция и быстрая работа скриптов
+                </p>
               </div>
-              <h3 className="text-2xl font-bold">Скорость</h3>
-              <p className="text-muted-foreground">
-                Мгновенная инъекция и быстрая работа скриптов
-              </p>
-            </div>
+            </ScrollReveal>
           </div>
           <div className="text-center mt-12">
             <Link to="/features">
