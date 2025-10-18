@@ -13,19 +13,19 @@ const Footer = () => {
           </Link>
           
           <p className="text-sm text-muted-foreground">
-            © 2024 ANEKOX by Acustic. Все права защищены.
+            © 2025 ANEKOX by Acustic. Все права защищены.
           </p>
           
           <div className="flex items-center gap-4">
-            <button className="text-sm text-muted-foreground hover:text-primary transition-colors">
+            <Link to="/privacy" className="text-sm text-muted-foreground hover:text-primary transition-colors">
               Политика
-            </button>
-            <button className="text-sm text-muted-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link to="/terms" className="text-sm text-muted-foreground hover:text-primary transition-colors">
               Условия
-            </button>
-            <button className="text-sm text-muted-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link to="/contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">
               Контакты
-            </button>
+            </Link>
           </div>
         </div>
       </div>
